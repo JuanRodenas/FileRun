@@ -30,7 +30,7 @@ Sustituya las variables de entorno en `.env` por las suyas propias, y luego ejec
 docker-compose up -d
 ```
 
-Entonces debería poder acceder a la web-ui de seafile con el `SEAFILE_ADMIN_EMAIL` y `SEAFILE_ADMIN_PASSWORD`.
+Entonces debería poder acceder a la web-ui de FileRun con el `SEAFILE_ADMIN_EMAIL` y `SEAFILE_ADMIN_PASSWORD`.
 
 ## Update
 Si quiere actualizar la imagen automáticamente con watchtower gracias a la siguiente etiqueta:
