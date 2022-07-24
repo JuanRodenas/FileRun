@@ -21,13 +21,13 @@ FileRun es una aplicación basada en web de File Sync and Share autohospedada. E
 </ul>
 
 ## Files
+-Creamos carpeta en el directorio de persistencia:
+```
+mkdir filerun
+```
 - Descargamos el repositorio:
 ```
 git clone "https://github.com/JuanRodenas/FileRun.git"
-```
--Creamos carpeta en el directorio de persistencia:
-```
-mkdir shared
 ```
 
 ### Configuration
@@ -46,3 +46,6 @@ Si quiere actualizar la imagen automáticamente con watchtower gracias a la sigu
   # Watchtower Update
   - "com.centurylinklabs.watchtower.enable=true"
 ```
+
+## Acceso
+Accedemos al servicio web y podemos cambiar a español con el archivo `spanish.php`
