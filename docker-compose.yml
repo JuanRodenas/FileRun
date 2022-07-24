@@ -38,7 +38,7 @@ services:
       FR_DB_PASS: ${PASSWORD}
       APACHE_RUN_USER: ${USER}
       APACHE_RUN_USER_ID: ${UID}
-      APACHE_RUN_GROUP: ${GROUP}
+      APACHE_RUN_GROUP: ${USER}
       APACHE_RUN_GROUP_ID: ${GID}
     networks:
       - internal
