@@ -9,9 +9,16 @@ FileRun es un sistema de software de alojamiento de archivos multiplataforma
 
 FileRun es una aplicación basada en web de File Sync and Share autohospedada. Es un administrador de archivos basado en la web con todas las funciones con una interfaz de usuario fácil de usar.
 
-* [Github](https://github.com/filerun/docker)
-* [Documentation](https://docs.filerun.com/docker)
-* [Docker Image](https://hub.docker.com/r/filerun/filerun/)
+### Documentación
+<ul>
+<li><p>Nos dirigimos a <code>/etc/hosts</code> y añadimos:</p></li>
+<p><a href="https://github.com/filerun/docker">Github</a></p>
+<p><a href="https://docs.filerun.com/docker">Documentation</a></p>
+<p><a href="https://hub.docker.com/r/filerun/filerun/">Docker Image</a></p>
+
+<sup>Para las CPU ARM64 (Raspberry Pi), utilice.</sup>
+<p><a href="https://docs.filerun.com/docker-arm64">CPU ARM64 (Raspberry Pi)</a></p>
+</ul>
 
 ## Files
 - Descargamos el repositorio:
