@@ -26,6 +26,7 @@ services:
     image: filerun/filerun:arm64v8
     restart: always
     container_name: filerun
+    user: ${UID}:${GID}
     security_opt:
       - no-new-privileges
     env_file:
