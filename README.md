@@ -11,7 +11,6 @@ FileRun es una aplicación basada en web de File Sync and Share autohospedada. E
 
 ### Documentación
 <ul>
-<li><p>Nos dirigimos a <code>/etc/hosts</code> y añadimos:</p></li>
 <p><a href="https://github.com/filerun/docker">Github</a></p>
 <p><a href="https://docs.filerun.com/docker">Documentation</a></p>
 <p><a href="https://hub.docker.com/r/filerun/filerun/">Docker Image</a></p>
