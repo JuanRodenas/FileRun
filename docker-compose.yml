@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb:focal
+    container_name: filerun-db
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-file-per-table=1 --skip-innodb-read-only-compressed
+    restart: always
+    security_opt:
+      - no-new-privileges
+    env_file:
+      - .env
+    networks:
+      - internal
+    environment:
+      - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+      - MYSQL_PASSWORD=${PASSWORD}
+      - MYSQL_DATABASE=${DATABASE}
+      - MYSQL_USER=${USERNAME}
+    volumes:
+      - /patch/to/data/filerun/db:/var/lib/mysql
+    labels:
+      - "traefik.enable=false"
+
+  web:
+    image: filerun/filerun:arm64v8
+    restart: always
+    container_name: filerun
+    security_opt:
+      - no-new-privileges
+    env_file:
+      - .env
+    environment:
+      FR_DB_HOST: db
+      FR_DB_PORT: 3306
+      FR_DB_NAME: ${DATABASE}
+      FR_DB_USER: ${USERNAME}
+      FR_DB_PASS: ${PASSWORD}
+      APACHE_RUN_USER: ${USER}
+      APACHE_RUN_USER_ID: ${UID}
+      APACHE_RUN_GROUP: ${GROUP}
+      APACHE_RUN_GROUP_ID: ${GID}
+    networks:
+      - internal
+      - nextcloud
+    depends_on:
+      - db
+    volumes:
+      - /patch/to/data/filerun/html:/var/www/html
+      - /patch/to/data/filerun/user-files:/user-files
+    labels:
+      # filerun
+      - "traefik.enable=true"
+      - "traefik.http.routers.filerun.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.filerun.entrypoints=websecure"
+      - "traefik.http.routers.filerun.tls=true"
+      - "traefik.http.routers.filerun.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.filerun.loadbalancer.server.port=80"
+      - "traefik.http.middlewares.filerun.headers.sslredirect=true"
+    
+networks:
+  nextcloud:
+    external: true
+  internal:
+    external: false
