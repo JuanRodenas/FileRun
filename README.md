@@ -23,6 +23,7 @@ FileRun es una aplicación basada en web de File Sync and Share autohospedada. E
 -Creamos carpeta en el directorio de persistencia:
 ```
 mkdir filerun filerun/html filerun/user-files filerun/db
+cd filerun
 ```
 - Descargamos el repositorio:
 ```
