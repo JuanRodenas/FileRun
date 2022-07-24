@@ -49,3 +49,5 @@ Si quiere actualizar la imagen automáticamente con watchtower gracias a la sigu
 
 ## Acceso
 Accedemos al servicio web y podemos cambiar a español con el archivo `spanish.php`
+- Para poder activar el servicio debemos crear una cuenta en:
+<p><a href="https://filerun.com/login">FileRun</a></p>
