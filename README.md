@@ -4,7 +4,13 @@ FileRun es un sistema de software de alojamiento de archivos multiplataforma
 ## About
 
 <p align="center">
-<img src="https://github.com/JuanRodenas/FileRun/blob/main/FileRun.png" />
+  <img src="https://github.com/JuanRodenas/FileRun/blob/main/FileRun.png"
+       width="700"/>
+</p>
+
+<p align="center">
+  <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" 
+       width="300"/>
 </p>
 
 FileRun es una aplicación basada en web de File Sync and Share autohospedada. Es un administrador de archivos basado en la web con todas las funciones con una interfaz de usuario fácil de usar.
