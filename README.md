@@ -17,12 +17,12 @@ FileRun es una aplicación basada en web de File Sync and Share autohospedada. E
 
 ### Documentación
 <ul>
-<p><a href="https://github.com/filerun/docker">Github</a></p>
-<p><a href="https://docs.filerun.com/docker">Documentation</a></p>
-<p><a href="https://hub.docker.com/r/filerun/filerun/">Docker Image</a></p>
+<li><p><a href="https://github.com/filerun/docker">Github</a></p></li>
+<li><p><a href="https://docs.filerun.com/docker">Documentation</a></p></li>
+<li><p><a href="https://hub.docker.com/r/filerun/filerun/">Docker Image</a></p></li>
 
 <sup>Para las CPU ARM64 (Raspberry Pi), utilice.</sup>
-<p><a href="https://docs.filerun.com/docker-arm64">CPU ARM64 (Raspberry Pi)</a></p>
+<li><p><a href="https://docs.filerun.com/docker-arm64">CPU ARM64 (Raspberry Pi)</a></p></li>
 </ul>
 
 ## Files
@@ -55,5 +55,6 @@ Si quiere actualizar la imagen automáticamente con watchtower gracias a la sigu
 
 ## Acceso
 Accedemos al servicio web y podemos cambiar a español con el archivo `spanish.php`
-- Para poder activar el servicio debemos crear una cuenta en:
-<p><a href="https://filerun.com/login">FileRun</a></p>
+- Para poder activar el servicio debemos crear una cuenta en: <p><a href="https://filerun.com/login">FileRun</a></p>
+
+## Ready!
